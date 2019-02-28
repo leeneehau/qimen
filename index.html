@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="">
+   <meta name="author" content="">
 
+   <title>Qi Men Dun Jia</title>
+   
+   <link rel="icon" href="images/yin-yang-32x32.png"/>
+
+   <!-- Bootstrap Core CSS -->
+   <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+
+   <!-- Custom Fonts -->
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+   <!-- AngularJS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+
+
+   <script src="lib/calendar.js"></script>
+   <script src="lib/wuxing.js"></script>
+   <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+	<div ng-app="qmdj" ng-controller="qmdjController">
+		<!-- <p> Current Time : {{ clock | date:'yyyy-MM-dd HH:mm:ss'}}<br/> <button class="btn btn-default" ng-click="generate()">GENERATE</button> </p> <p>Year : {{ currentDate | date:'yyyy' }} | {{bazi.year}}</p> <p>Month : {{ currentDate | date:'MMM' }} | {{bazi.month}}</p> <p>Day : {{ currentDate | date:'dd' }} | {{bazi.date}}</p> <p>Hour : {{ currentDate | date:'HH:mm' }} | {{bazi.hour}}</p> -->
+
+    <table width="50%" cellpadding="0" cellspacing="1" class="tdW" align="center" style="border:1px solid #000" >
+        <tr>
+          <td colspan="4">
+            Current Time : {{ clock | date:'yyyy-MM-dd HH:mm:ss'}}<br/>
+           <button class="btn btn-default" ng-click="generate()">GENERATE</button>
+         
+          </td>
+        </tr>
+        <tr>
+          <th width="25%" class="td1">時 Hour</th>
+          <th width="25%" class="td1">日 Day</th>
+          <th width="25%" class="td1">月 Month</th>
+          <th width="25%" class="td1">年 Year</th>
+        </tr>
+        <tr>
+          <td>{{bazi.hour}}</td>
+          <td>{{bazi.date}}</td>
+          <td>{{bazi.month}}</td>
+          <td>{{bazi.year}}</td>
+        </tr>
+        
+      </table>
+        
+
+	</div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+
+<script>
+
+
+</script>
